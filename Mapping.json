@@ -1,12 +1,4 @@
 {"personMappings":[
-       {
-            "name":"Aggregation",
-            "mode":"field",
-            "value":"Agregation",
-            "validation":{
-                "required":false
-            }
-        },
         {
             "name":"ExternalId",
             "mode":"field",
@@ -44,7 +36,7 @@
         {
             "name":"Department.DisplayName",
             "mode":"field",
-            "value":"LibelleService",
+            "value":"DepartmentNameLong",
             "validation":{
                 "required":false
             }
@@ -52,7 +44,7 @@
         {
             "name":"Department.ExternalId",
             "mode":"field",
-            "value":"CodeService",
+            "value":"DepartmentCode",
             "validation":{
                 "required":false
             }
@@ -68,7 +60,7 @@
         {
             "name":"EndDate",
             "mode":"field",
-            "value":"DateDeFin",
+            "value":"EndDate",
             "validation":{
                 "required":false
             }
@@ -84,7 +76,7 @@
         {
             "name":"StartDate",
             "mode":"field",
-            "value":"DateDebutContrat",
+            "value":"StartDate",
             "validation":{
                 "required":false
             }
@@ -92,7 +84,7 @@
         {
             "name":"Title.Code",
             "mode":"field",
-            "value":"CodeMetier",
+            "value":"BusinessCode",
             "validation":{
                 "required":false
             }
@@ -100,7 +92,7 @@
         {
             "name":"Title.ExternalId",
             "mode":"field",
-            "value":"CodeMetier",
+            "value":"BusinessCode",
             "validation":{
                 "required":false
             }
@@ -108,7 +100,7 @@
         {
             "name":"Title.Name",
             "mode":"field",
-            "value":"LibelleMetier",
+            "value":"JobTitle",
             "validation":{
                 "required":false
             }
