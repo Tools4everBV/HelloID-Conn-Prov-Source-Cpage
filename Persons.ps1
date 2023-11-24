@@ -93,11 +93,11 @@ Try{
                 $contract["ID"] = $c.Contract_ID
                 $contract["BusinessCode"] = $c.Business_Code
                 $contract["JobTitle"] = $c.Job_Title
-                $contract["CodeService"] = $c.Department_Code
-                $contract["LibelleService"] = $c.Department_NameLong
+                $contract["DepartmentCode"] = $c.Department_Code
+                $contract["DepartmentNameLong"] = $c.Department_NameLong
                 $contract["NumPeriode"] = $c.Sequence_Number
-                $contract["DateDebutContrat"] = $c.Start_Date
-                $contract["DateDeFin"] = $c.End_Date
+                $contract["StartDate"] = $c.Start_Date
+                $contract["EndDate"] = $c.End_Date
                 $contract["FTE"] = $c.FTE
                 
                 [void]$person.Contracts.Add($contract);
