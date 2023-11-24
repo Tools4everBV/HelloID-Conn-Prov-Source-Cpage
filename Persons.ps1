@@ -13,8 +13,8 @@ Try{
     AGE.PRENAG AS FirstName,
     AGE.NUSUAG || ' ' || AGE.PRENAG || '-' || AGE.NUAGAG  AS DisplayName,
     AGE.TITRAG AS Civility,
-    PSPEB2.CODESSPEB2 AS CODE_B2,
-    PINFPS.NRPPSINFPS AS CODE_RPPS
+    PSPEB2.CODESSPEB2 AS B2_Code,
+    PINFPS.NRPPSINFPS AS Rpps_Code
     FROM
     AGE,PSPEB2,PINFPS
     WHERE AGE.NUAGAG = PSPEB2.MATRISPEB2(+)
@@ -49,8 +49,8 @@ Try{
     TO_CHAR (PAFREP.DTDEBPAFREP,'mm-dd-yyyy') AS Start_Date,
     TO_CHAR (PAFREP.DTFINPAFREP,'mm-dd-yyyy') AS End_Date,  
     PAFREP.IDENTPAFREP AS Contract_ID,
-    PAMT2.COFAAMT||PAMT2.COSFAMT||PAMT2.CODEAMT AS CODE_METIER,
-    PCME2.LIOFCME AS LIBELLE_METIER,
+    PAMT2.COFAAMT||PAMT2.COSFAMT||PAMT2.CODEAMT AS Business_Code,
+    PCME2.LIOFCME AS Job_Title,
     U.LIBPUF AS Department_NameLong
     FROM
         PAFREP,
@@ -83,16 +83,16 @@ Try{
         $person["LastName"] = $p.LastName
         $person["LastNameBirth"] = $p.LastNameBirth
         $person["AdelNumber"] = ($CodesAdeli | where-object {$_.MATRIADELI -eq $p.ExternalId}).NUMERADELI
-        $person["CodeRPPS"] = $p.CODE_RPPS
-        $person["CodeB2"] = $p.CODE_B2
+        $person["RPPSCode"] = $p.Rpps_Code
+        $person["B2Code"] = $p.B2_Code
         $person["Source"] = "CPAGE"
         $person["Contracts"] = [System.Collections.ArrayList]@();
         foreach($c in $contracts){
             if($c.Employee_ID -eq $p.ExternalId){
                 $contract = @{}; 
                 $contract["ID"] = $c.Contract_ID
-                $contract["CodeMetier"] = $c.CODE_METIER
-                $contract["LibelleMetier"] = $c.LIBELLE_METIER
+                $contract["BusinessCode"] = $c.Business_Code
+                $contract["JobTitle"] = $c.Job_Title
                 $contract["CodeService"] = $c.Department_Code
                 $contract["LibelleService"] = $c.Department_NameLong
                 $contract["NumPeriode"] = $c.Sequence_Number
