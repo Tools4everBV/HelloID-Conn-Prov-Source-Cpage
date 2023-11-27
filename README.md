@@ -57,7 +57,10 @@ The queries can be changed by the customer itself to meet their requirements.
 
 2. Fill in the required fields on the 'Configuration' tab.
 
-![image](./assets/config.png)
+<p align="left">
+  <img src="./assets/config.png" width="500">
+</p>
+
 
 _For more information about our HelloID PowerShell connectors, please refer to our general [Documentation](https://docs.helloid.com/hc/en-us/articles/360012557600-Configure-a-custom-PowerShell-source-system) page_
 
