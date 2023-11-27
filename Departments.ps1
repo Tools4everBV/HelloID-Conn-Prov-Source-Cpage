@@ -27,5 +27,5 @@ try{
     }
 Write-Verbose -Verbose "$($result.count) departements imported"
 }catch{
-    Write-verbose -verbose "Erreur during UF importation - $error[0].Exception.Message"
+    Write-verbose -verbose "Error during UF importation - $error[0].Exception.Message"
 }
