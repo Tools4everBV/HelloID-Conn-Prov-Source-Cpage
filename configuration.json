@@ -1,0 +1,14 @@
+[
+  {
+    "key": "dsn",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Chaine de connection DSN",
+      "type": "password",
+      "placeholder": "exemple : DSN=XXX_DB;Uid=XXX;Pwd=XXX",
+      "required": false
+    }
+  }
+]
+  
