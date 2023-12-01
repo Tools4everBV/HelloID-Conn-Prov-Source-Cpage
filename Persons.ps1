@@ -74,26 +74,26 @@ Try{
     $da = [System.Data.Odbc.OdbcDataAdapter]::new($cmdSelectContracts)
     $dtContracts = [System.Data.datatable]::new()
     $null = $da.fill($dtContracts)
-    $Contracts = @()
-    $Contracts += $dtContracts
-    $Contracts = $Contracts | Select-Object -Property * -ExcludeProperty RowError,RowState,Table,ItemArray,HasErrors
+    $contracts = @()
+    $contracts += $dtContracts
+    $contracts = $contracts | Select-Object -Property * -ExcludeProperty RowError,RowState,Table,ItemArray,HasErrors
     $conn.close()
     
     # Creating the person object                         
     foreach($p in $persons){
         $person = @{
-            ExternalId      = $p.ExternalId
-            DisplayName     = $p.DisplayName
-            FirstName       = $p.FirstName
-	    LastName	    = $p.LastName
-            LastNameBirth   = $p.LastNameBirth
-            AdelNumber      = $CodesAdeliGrouped["$($p.ExternalId)"].NUMERADELI
+            ExternalId      = $p.externalId
+            DisplayName     = $p.displayName
+            FirstName       = $p.firstName
+	    LastName	    = $p.lastName
+            LastNameBirth   = $p.lastNameBirth
+            AdelNumber      = $codesAdeliGrouped["$($p.ExternalId)"].NUMERADELI
             RPPSCode        = $p.Rpps_Code
             B2Code          = $p.B2_Code
             Source          = "CPAGE"
             Contracts       = [System.Collections.ArrayList]@()
         }
-        # Adding contracts to person           
+	# Adding contracts to person           
         foreach($c in $contracts){
 
             if($c.Employee_ID -eq $p.ExternalId){
