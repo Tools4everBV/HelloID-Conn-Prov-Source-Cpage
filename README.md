@@ -19,6 +19,8 @@ Please remember This is the first version of this connector. Any feedback will b
   * [Mappings](#mappings)
   * [Scope](#scope)
 * [Setup the PowerShell connector](#setup-the-powershell-connector)
+* [HelloID Docs](#setup-the-powershell-connector)
+
 
 ## Introduction
 The interface to communicate with CPage On-Premises is through a set of Oracle or SQL DB queries.
@@ -60,7 +62,11 @@ The queries can be changed by the customer itself to meet their requirements.
 </p>
 
 
-_For more information about our HelloID PowerShell connectors, please refer to our general [Documentation](https://docs.helloid.com/hc/en-us/articles/360012557600-Configure-a-custom-PowerShell-source-system) page_
-
-# HelloID Docs
+## HelloID Docs
 The official HelloID documentation can be found at: https://docs.helloid.com/
+
+## Getting help
+
+For more information on how to configure a HelloID PowerShell connector, please refer to our [documentation](https://docs.helloid.com/hc/en-us/articles/360012557600-Configure-a-custom-PowerShell-source-system) pages
+
+If you need help, feel free to ask questions on our [forum](https://forum.helloid.com)_
