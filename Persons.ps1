@@ -85,6 +85,7 @@ Try{
             ExternalId      = $p.ExternalId
             DisplayName     = $p.DisplayName
             FirstName       = $p.FirstName
+	    LastName	    = $p.LastName
             LastNameBirth   = $p.LastNameBirth
             AdelNumber      = $CodesAdeliGrouped["$($p.ExternalId)"].NUMERADELI
             RPPSCode        = $p.Rpps_Code
