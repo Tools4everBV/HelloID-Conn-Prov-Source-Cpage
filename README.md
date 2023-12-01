@@ -16,8 +16,6 @@ Please remember This is the first version of this connector. Any feedback will b
 ## Table of Contents
 * [Introduction](#introduction)
 * [Getting Started](#getting-started)
-  * [Source](#source)
-  * [Target](#target)
   * [Mappings](#mappings)
   * [Scope](#scope)
 * [Setup the PowerShell connector](#setup-the-powershell-connector)
