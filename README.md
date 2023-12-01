@@ -69,4 +69,4 @@ The official HelloID documentation can be found at: https://docs.helloid.com/
 
 For more information on how to configure a HelloID PowerShell connector, please refer to our [documentation](https://docs.helloid.com/hc/en-us/articles/360012557600-Configure-a-custom-PowerShell-source-system) pages
 
-If you need help, feel free to ask questions on our [forum](https://forum.helloid.com)_
+If you need help, feel free to ask questions on our [forum](https://forum.helloid.com)
