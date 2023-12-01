@@ -20,6 +20,7 @@ Please remember This is the first version of this connector. Any feedback will b
   * [Scope](#scope)
 * [Setup the PowerShell connector](#setup-the-powershell-connector)
 * [HelloID Docs](#helloid-docs)
+* [Getting Help](#getting-help)
 
 ## Introduction
 The interface to communicate with CPage On-Premises is through a set of Oracle or SQL DB queries.
