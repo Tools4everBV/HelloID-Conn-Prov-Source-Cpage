@@ -27,8 +27,8 @@ try {
         $result.Add($department)
         Write-Output ($department | ConvertTo-Json -Depth 50)
     }
-    Write-Verbose -Verbose "$($result.count) departements imported"
+    Write-information "$($result.count) departements imported"
 }catch{
     
-    Write-verbose -verbose "Error during UF importation - $($_.Exception.Message)"
+    Write-error "Error during UF importation - $($_.Exception.Message)"
 }
