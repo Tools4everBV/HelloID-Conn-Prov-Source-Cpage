@@ -4,7 +4,7 @@ Try{
     # Initializing Oracle connexion
     [System.Reflection.Assembly]::LoadWithPartialName("System.Data.OracleClient") | out-null
     $conn = [System.Data.Odbc.OdbcConnection]::new()
-    $conn.connectionstring = $config.connectionstring
+    $conn.connectionstring = $config.dsn
     $conn.open()
 
     # Querying Persons
@@ -34,7 +34,7 @@ Try{
     $sqlAdeli = "SELECT PER.PADELI.MATRIADELI,
     PER.PADELI.NUMERADELI,
     PER.PADELI.DATEDADELI
-    FROM 
+    FROM
         PER.PADELI"
     $cmdAdeli = [System.Data.Odbc.OdbcCommand]::new($sqlAdeli, $conn)
     $da = [System.Data.Odbc.OdbcDataAdapter]::new($cmdAdeli)
@@ -78,14 +78,14 @@ Try{
     $contracts += $dtContracts
     $contracts = $contracts | Select-Object -Property * -ExcludeProperty RowError,RowState,Table,ItemArray,HasErrors
     $conn.close()
-    
-    # Creating the person object                         
+
+    # Creating the person object
     foreach($p in $persons){
         $person = @{
             ExternalId      = $p.externalId
             DisplayName     = $p.displayName
             FirstName       = $p.firstName
-	    LastName	    = $p.lastName
+	        LastName	    = $p.lastName
             LastNameBirth   = $p.lastNameBirth
             AdelNumber      = $codesAdeliGrouped["$($p.ExternalId)"].NUMERADELI
             RPPSCode        = $p.Rpps_Code
@@ -93,7 +93,7 @@ Try{
             Source          = "CPAGE"
             Contracts       = [System.Collections.ArrayList]@()
         }
-	# Adding contracts to person           
+	# Adding contracts to person
         foreach($c in $contracts){
 
             if($c.Employee_ID -eq $p.ExternalId){

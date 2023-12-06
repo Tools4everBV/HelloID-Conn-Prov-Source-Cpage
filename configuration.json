@@ -9,6 +9,15 @@
       "placeholder": "exemple : DSN=XXX_DB;Uid=XXX;Pwd=XXX",
       "required": false
     }
+  },
+  {
+    "key": "date",
+    "type": "input",
+    "defaultValue": "",
+    "templateOptions": {
+      "label": "Date de mise en Production (Attention cette valeur ne doit jamais changer)",
+      "placeholder": "01/01/2021",
+      "required": false
+    }
   }
 ]
-  
