@@ -58,9 +58,8 @@ The queries can be changed by the customer itself to meet their requirements.
 2. Fill in the required fields on the 'Configuration' tab.
 
 <p align="left">
-  <img src="./assets/config.png" width="500">
+  <img src="https://github.com/Tools4everBV/HelloID-Conn-Prov-Source-Cpage/raw/main/assets/config.png" width="500">
 </p>
-
 
 ## HelloID Docs
 The official HelloID documentation can be found at: https://docs.helloid.com/
