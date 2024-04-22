@@ -6,7 +6,7 @@ HR system mostly used by Hospitals in France
 | This repository contains the connector and configuration code only. The implementer is responsible to acquire the connection details such as username, password, certificate, etc. You might even need to sign a contract or agreement with the supplier before implementing this connector. Please contact the client's application manager to coordinate the connector requirements.       |
 <br />
 <p align="center">
-  <img src="https://www.cpage.fr/app/uploads/2022/07/logo.svg" width="500">
+  <img src="https://tools4ever.nl/connector-logos/cpage-logo.png" width="500">
 </p>
 
 HelloID provisioning source connector for CPage On-Premises based on Oracle DB queries.
