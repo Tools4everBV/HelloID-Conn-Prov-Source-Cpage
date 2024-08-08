@@ -48,4 +48,4 @@ Bénéficiez d'une synchronisation automatisée entre CPAGE et Azure AD avec Hel
 * **CPAGE - Intégration GLPI**
 Augmentez l'efficacité entre les RH et l'informatique en reliant CPAGE à GLPI. HelloID peut, par exemple, créer automatiquement des tickets lors de l'intégration, ce qui permet de rationaliser le processus.
 
-En outre, HelloID prend en charge plus de 200 connecteurs, ce qui offre un large éventail de possibilités d'intégration entre CPAGE et d'autres systèmes. 
+En outre, HelloID prend en charge plus de 200 connecteurs, ce qui offre un large éventail de possibilités d'intégration entre CPAGE et d'autres systèmes.
